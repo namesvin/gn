@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
+
+body {
+    font-family: 'Montserrat', monospace;
+    background-color: var(--base);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.secondary-btn {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-div {
+    text-align: center;
+}
+
+.title {
+    color: var(--mauve);
+    text-shadow: 1px 1px 10px var(--mauve);
+}
+
+.blurred {
+    filter: blur(4px);
+}
+
+.container {
+    border-radius: 15px;
+    padding: 40px;
+    width: 400px;
+    background-color: var(--surface0);
+    box-shadow: 0px 0px 20px var(--mantle);
+}
+
+.button-div a, button {
+    font-family: 'Montserrat', monospace;
+    display: block;
+    width: 100%;
+    border: 2px solid var(--mauve);
+    border-radius: 10px;
+    color: var(--text);
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: var(--surface1);
+    box-shadow: 0px 0px 5px var(--surface1);
+    transition: 0.2s all;
+}
+
+.button-div a:hover, p:hover {
+    box-shadow: 0px 0px 5px var(--mauve);
+    background-color: var(--base);
+    transition: 0.2s all;
+}
+
+.dropdown, .dropdown-content {
+    list-style: none !important;
+    padding: 0;
+}
+
+.dropdown-content {
+    overflow: hidden;
+    min-width: max-content;
+    max-height: 0;
+    transition: max-height 1s;
+}
+
+.dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content, .dropdown:focus-within .dropdown-content {
+    max-height: 200px;
+}
