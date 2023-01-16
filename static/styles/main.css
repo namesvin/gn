@@ -120,3 +120,23 @@ a {
 .center {
     text-align: center;
 }
+
+.back {
+    font-family: 'Montserrat', monospace;
+    width: 100%;
+    border: 2px solid var(--mauve);
+    border-radius: 10px;
+    color: var(--text);
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--surface1);
+    box-shadow: 0px 0px 5px var(--surface1);
+}
+
+.back:hover {
+    box-shadow: 0px 0px 5px var(--mauve);
+    background-color: var(--base);
+    transition: 0.2s all;
+}
