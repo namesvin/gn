@@ -82,9 +82,21 @@ a {
     transition: 0.2s all;
 }
 
-.button-div a:hover, p:hover {
+.button-div a:hover, .button-div p:hover {
     box-shadow: 0px 0px 5px var(--mauve);
     background-color: var(--base);
+    transition: 0.2s all;
+}
+
+p {
+    padding: 5px;
+    border: 0px solid;
+    border-radius: 10px;
+    transition: 0.2s all;
+}
+
+p:hover {
+    box-shadow: 0px 0px 5px var(--mauve);
     transition: 0.2s all;
 }
 
